@@ -2,19 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // Rutas
-import { appRouting } from './app.routes';
+import { APP_ROUTES } from './app.routes';
 
+// Modulos
+import { PagesModule } from './pages/pages.module';
+
+// Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ProgressComponent } from './pages/progress/progress.component';
-import { Graficas1Component } from './pages/graficas1/graficas1.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
-import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
-import { PagesComponent } from './pages/pages.component';
+// import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
+// import { HeaderComponent } from './shared/header/header.component';
+// import { SidebarComponent } from './shared/sidebar/sidebar.component';
+// import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
+// import { PagesComponent } from './pages/pages.component';
+// import { DashboardComponent } from './dashboard/dashboard.component';
+// import { ProgressComponent } from './progress/progress.component';
+// import { Graficas1Component } from './graficas1/graficas1.component';
+
 
 
 @NgModule({
@@ -22,18 +27,19 @@ import { PagesComponent } from './pages/pages.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NopagefoundComponent,
-    DashboardComponent,
-    ProgressComponent,
-    Graficas1Component,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-    PagesComponent
+    // DashboardComponent,
+    // ProgressComponent,
+    // Graficas1Component,
+    // NopagefoundComponent,
+    // HeaderComponent,
+    // SidebarComponent,
+    // BreadcrumbsComponent,
+    // PagesComponent
   ],
   imports: [
     BrowserModule,
-    appRouting
+    APP_ROUTES,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
