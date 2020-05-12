@@ -8,8 +8,10 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 import { LoginGuardGuard } from '../services/service.index';
+
 
 
 
@@ -27,6 +29,8 @@ const pagesRoutes: Routes = [
         { path: 'rxjs', component: RxjsComponent, data: { titulo: 'RxJS', descripcion: 'Página para mostrar ejercicio de observables' } },
         { path: 'account-settings', component: AccountSettingsComponent, data: { titulo: 'Ajustes del Tema' } },
         { path: 'perfil', component: ProfileComponent, data: { titulo: 'Perfil de usuario' } },
+        // Mantenimientos
+        { path: 'usuarios', component: UsuariosComponent, data: { titulo: 'Mantenimiento de usuario' } },
         { path: '', pathMatch:'full', redirectTo: '/dashboard' }
       ]
     }
